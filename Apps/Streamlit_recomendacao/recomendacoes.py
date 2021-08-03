@@ -179,8 +179,8 @@ def app():
 
     # --------- DATA ----------
     #Carregando dados 
-    movies = pd.read_csv("C:/Users/pedro/Documents/Science/Portfolio-streamlit/Apps/Streamlit_recomendacao/Data/movies.csv")
-    ratings = pd.read_csv("C:/Users/pedro/Documents/Science/Portfolio-streamlit/Apps/Streamlit_recomendacao/Data/ratings.csv")
+    movies = pd.read_csv("Apps/Streamlit_recomendacao/Data/movies.csv")
+    ratings = pd.read_csv("Apps/Streamlit_recomendacao/Data/ratings.csv")
 
     #Criando a coluna de popularidade do filme 
     popularity = ratings["movieId"].value_counts()

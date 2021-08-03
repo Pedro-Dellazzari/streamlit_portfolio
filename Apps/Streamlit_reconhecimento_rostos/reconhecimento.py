@@ -16,7 +16,7 @@ def app():
         imagem_gray = cv2.cvtColor(imagem, cv2.COLOR_RGB2GRAY)
 
         #Pegando os classifador 
-        classificador = cv2.CascadeClassifier("C:/Users/pedro/Documents/Science/Portfolio-streamlit/Apps/Streamlit_reconhecimento_rostos/classificadores/haarcascade_frontalface_default.xml")
+        classificador = cv2.CascadeClassifier("Apps/Streamlit_reconhecimento_rostos/classificadores/haarcascade_frontalface_default.xml")
 
         #Dectando os números de rostos 
         faces = classificador.detectMultiScale(imagem_gray, 1.3, 5)
