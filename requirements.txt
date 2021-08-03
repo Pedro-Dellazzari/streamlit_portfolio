@@ -5,3 +5,4 @@ plotly==5.1.0
 matplotlib==3.4.2
 streamlit==0.84.2
 opencv-python-headless
+yfinance==0.1.63

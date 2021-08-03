@@ -13,7 +13,7 @@ def app():
 
     #Criando o expander de Data Science 
     data_science = col1.beta_expander("Data Science")
-    data_science.write("""- Projeto 1 \n\n - Projeto 2""")
+    data_science.write("""- Monitoramento da bolsa de valores indicadas pela CNN \n\n - Projeto 2""")
 
     #Criando o expander de Machine Learning
     machine_learning = col1.beta_expander("Machine Learning")
