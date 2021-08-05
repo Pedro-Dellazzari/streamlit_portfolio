@@ -27,7 +27,8 @@ def app():
 
         #Criando a função para criar retângulos nas faces 
         for (x,y,w,h) in faces:
-            cv2.rectangle(imagem_with_faces, (x,y), (x+w, y+h), (255,127,0), 4)
+            rectangle = cv2.rectangle(imagem_with_faces, (x,y), (x+w, y+h), (255,127,0), 4)
+            cv2.putText(rectangle, 'Teste', (x,y-10), cv2.FONT_HERSHEY_SIMPLEX, 0.9,(36,255,12),2)
 
         #Mostando a imagem 
         return col2.image(imagem_with_faces)
