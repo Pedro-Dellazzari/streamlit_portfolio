@@ -25,10 +25,15 @@ def app():
         imagem_with_faces = imagem.copy()
         imagem_with_faces = cv2.cvtColor(imagem_with_faces, cv2.COLOR_BGR2RGB)
 
-        #Criando a função para criar retângulos nas faces 
+        #Criando a função para criar retângulos nas faces
+        #Criando a variável para colocar nas faces 
+        len_faces = 1 
         for (x,y,w,h) in faces:
             rectangle = cv2.rectangle(imagem_with_faces, (x,y), (x+w, y+h), (255,127,0), 4)
-            cv2.putText(rectangle, 'Teste', (x,y-10), cv2.FONT_HERSHEY_SIMPLEX, 0.9,(36,255,12),2)
+            cv2.putText(rectangle, "Face_"+str(len_faces), (x,y-10), cv2.FONT_HERSHEY_SIMPLEX, 1,(255,127,0),3)
+
+            #Adicionando mais um
+            len_faces = len_faces + 1
 
         #Mostando a imagem 
         return col2.image(imagem_with_faces)
