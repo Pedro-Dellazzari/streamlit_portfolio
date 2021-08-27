@@ -19,7 +19,7 @@ def app():
         classificador = cv2.CascadeClassifier("Apps/Streamlit_reconhecimento_rostos/classificadores/haarcascade_frontalface_default.xml")
 
         #Dectando os números de rostos 
-        faces = classificador.detectMultiScale(imagem_gray, 1.3, 5)
+        faces = classificador.detectMultiScale(imagem_gray, 1.2, 5)
 
         #Criando a imagem com os rostos marcados 
         imagem_with_faces = imagem.copy()
